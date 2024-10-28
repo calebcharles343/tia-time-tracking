@@ -81,7 +81,9 @@
 }
 
 .card-text {
-  /* height: 19.9rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
   width: 100vw;
   margin-top: 4.5rem;
   border-radius: 20px;
@@ -93,7 +95,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 3rem;
 }
 
 .cardText-header > h1 {

@@ -7,16 +7,14 @@
     justify-content: start;
     align-content: start;
     grid-template-columns: 32.7rem;
-    /* grid-template-rows: auto; */
     grid-template-rows: minmax(auto, auto);
-    gap: 3rem;
+    gap: 5rem;
     padding: 3rem;
   }
 
   /* NAVIGATION */
-
   .nav-bar {
-    height: auto;
+    height: 20.3rem;
   }
 
   .profile {
@@ -49,6 +47,7 @@
   .nav-list {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 2rem;
   }
 
@@ -56,10 +55,12 @@
   .card {
     background-size: cover;
     background-position: center;
+    height: 16rem;
   }
 
   .card-text {
-    padding: 4rem;
+    padding: 3rem;
+    gap: 2rem;
   }
 
   .card-time {
