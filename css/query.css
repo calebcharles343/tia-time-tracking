@@ -6,7 +6,7 @@
   .main {
     justify-content: start; /* Aligns items to the left */
     align-content: start; /* Aligns items to the top */
-    grid-template-columns: 1fr;
+    grid-template-columns: 32.7rem;
     /* grid-template-rows: auto; */
     grid-template-rows: minmax(auto, auto);
     gap: 2rem;
