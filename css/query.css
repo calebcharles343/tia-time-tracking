@@ -1,8 +1,4 @@
 @media (max-width: 575px) {
-  /* html {
-    font-size: 50%;
-  } */
-
   .main {
     justify-content: start;
     align-content: start;
@@ -21,13 +17,14 @@
   .profile {
     flex-direction: row;
     align-items: center;
-    padding: 3.2rem;
-    gap: 1rem;
+    padding: 3rem;
+    gap: 1.2rem;
   }
 
   .profile-img {
     width: 6.4rem;
     height: 6.4rem;
+    transform: scale(1.1);
   }
 
   .profile-text {
