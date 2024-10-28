@@ -8,13 +8,14 @@
     align-content: start;
     grid-template-columns: 32.7rem;
     grid-template-rows: minmax(auto, auto);
-    gap: 5rem;
+    gap: 3rem;
+    /* gap: 0rem; */
     padding: 3rem;
   }
 
   /* NAVIGATION */
   .nav-bar {
-    height: 20.3rem;
+    /* height: 20.3rem; */
   }
 
   .profile {
