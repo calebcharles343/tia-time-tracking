@@ -1,0 +1,74 @@
+@media (max-width: 575px) {
+  /* html {
+    font-size: 30%;
+  } */
+
+  .main {
+    justify-content: start; /* Aligns items to the left */
+    align-content: start; /* Aligns items to the top */
+    grid-template-columns: 1fr;
+    /* grid-template-rows: auto; */
+    grid-template-rows: minmax(37.5rem, 57.5rem);
+    gap: 2rem;
+    padding: 6rem 3rem;
+  }
+
+  /* Navigation Bar */
+  .nav-bar {
+    padding: 2rem; /* Adjust padding for mobile */
+  }
+
+  /* Profile Section */
+  .profile {
+    padding: 2rem; /* Reduce padding for smaller screens */
+  }
+
+  .profile-text > h1 {
+    font-size: 3rem; /* Adjust font size */
+    line-height: 3.5rem;
+  }
+
+  .profile-text > p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  /* Navigation List */
+  .nav-list {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 2rem; /* Adjust padding for smaller screens */
+  }
+
+  /* Card Adjustments */
+  .card {
+    height: auto; /* Allow card height to adjust with content */
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Text Section */
+  .text {
+    height: auto; /* Allow text height to adjust naturally */
+    width: 100;
+    margin-top: 4rem;
+    padding: 1.5rem;
+  }
+
+  .text-header > h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Time Section */
+  .time > span {
+    font-size: 4rem; /* Adjust font size */
+  }
+
+  .time > p {
+    font-size: 1.3rem; /* Adjust font size for readability */
+  }
+}
+/* 
+background-size: cover;
+background-position: center;
+*/
