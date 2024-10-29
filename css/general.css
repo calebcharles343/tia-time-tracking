@@ -70,7 +70,6 @@ html {
 
   /*does not work on safari and micro edge  */
   /* scroll-behavior: smooth; */
-  background-color: #0e1323;
 }
 
 body {
@@ -81,6 +80,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  background-color: #0e1323;
 
   /* Only works if ther is nothing 
   absolutely positioned in relations to body  */
