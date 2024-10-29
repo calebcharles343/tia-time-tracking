@@ -11,7 +11,7 @@
 
   /* NAVIGATION */
   .nav-bar {
-    /* height: 20.3rem; */
+    height: 20.3rem;
   }
 
   .profile {
@@ -51,7 +51,7 @@
 
   /* CARD */
   .card {
-    background-size: cover;
+    background-size: 100% 90%;
     background-position: center;
     height: 16rem;
   }
@@ -59,6 +59,7 @@
   .card-text {
     padding: 3rem;
     gap: 2rem;
+    margin-top: 6.1rem;
   }
 
   .toggleBtn-icon {
