@@ -5,7 +5,6 @@
     grid-template-columns: 32.7rem;
     grid-template-rows: minmax(auto, auto);
     gap: 3rem;
-    /* gap: 0rem; */
     padding: 3rem;
   }
 
@@ -76,11 +75,4 @@
   .card-time > span {
     font-size: 3.2rem;
   }
-
-  /* .text {
-  } */
 }
-/* 
-background-size: cover;
-background-position: center;
-*/

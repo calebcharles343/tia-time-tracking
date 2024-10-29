@@ -50,6 +50,19 @@
   line-height: 2.133rem;
 }
 
+.nav-link:link,
+.nav-link:visited {
+  transition: 0.2s;
+}
+.nav-link:hover,
+.nav-link:active {
+  color: #fff;
+}
+
+.nav-link.active {
+  color: #fff;
+}
+
 /* /////////////////////// */
 /*CARD */
 /* /////////////////////// */
@@ -91,6 +104,12 @@
   background-color: #1c204b;
   padding: 2.9rem 3.2rem;
   transform: scale(1.01);
+  transition: 0.2s;
+}
+
+.card-text:hover {
+  background-color: #33397a;
+  cursor: pointer;
 }
 .cardText-header {
   display: flex;
