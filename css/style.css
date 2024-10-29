@@ -42,6 +42,7 @@
 .nav-list {
   display: flex;
   flex-direction: column;
+  height: 32%;
   gap: 2rem;
   padding: 3.2rem;
   color: #7078c9;
