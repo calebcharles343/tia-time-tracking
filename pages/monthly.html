@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Odin Dashboard</title>
+    <title>Time Tracking</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="/css/general.css" />
@@ -20,202 +20,208 @@
   </head>
   <body>
     <div class="main">
-      <nav class="nav-bar">
-        <div class="profile">
-          <img
-            class="profile-img"
-            src="../img/Bitmap.png"
-            alt="profile image"
-          />
+      <header class="header">
+        <h1>Tunga Impact Acadamy</h1>
+        <h3>Time Tracking with raw HTML and CSS</h3>
+      </header>
+      <div class="layout">
+        <nav class="nav-bar">
+          <div class="profile">
+            <img
+              class="profile-img"
+              src="../img/Bitmap.png"
+              alt="profile image"
+            />
 
-          <div class="profile-text">
-            <p>Report for</p>
-            <h1>Jeremy Robson</h1>
+            <div class="profile-text">
+              <p>Report for</p>
+              <h1>Jeremy Robson</h1>
+            </div>
+          </div>
+
+          <ul class="nav-list">
+            <li><a class="nav-link" href="daily.html">Daily</a></li>
+            <li><a class="nav-link" href="/index.html">Weekly</a></li>
+            <li><a class="nav-link" href="monthly.html">Monthly</a></li>
+          </ul>
+        </nav>
+        <div id="work-card" class="card">
+          <div class="card-text">
+            <div class="cardText-header">
+              <h1>Work</h1>
+
+              <button id="toggle-btn">
+                <svg
+                  class="toggleBtn-icon"
+                  viewBox="0 0 16 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="Combined Shape"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4 2.5C4 3.88071 3.10457 5 2 5C0.895431 5 0 3.88071 0 2.5C0 1.11929 0.895431 0 2 0C3.10457 0 4 1.11929 4 2.5ZM10 2.5C10 3.88071 9.10457 5 8 5C6.89543 5 6 3.88071 6 2.5C6 1.11929 6.89543 0 8 0C9.10457 0 10 1.11929 10 2.5ZM14 5C15.1046 5 16 3.88071 16 2.5C16 1.11929 15.1046 0 14 0C12.8954 0 12 1.11929 12 2.5C12 3.88071 12.8954 5 14 5Z"
+                    fill="#BBC0FF"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="card-time">
+              <span>96hrs</span>
+              <p>Last month - 108hrs</p>
+            </div>
           </div>
         </div>
+        <div id="play-card" class="card">
+          <div class="card-text">
+            <div class="cardText-header">
+              <h1>Play</h1>
 
-        <ul class="nav-list">
-          <li><a class="nav-link" href="daily.html">Daily</a></li>
-          <li><a class="nav-link" href="/index.html">Weekly</a></li>
-          <li><a class="nav-link" href="monthly.html">Monthly</a></li>
-        </ul>
-      </nav>
-      <div id="work-card" class="card">
-        <div class="card-text">
-          <div class="cardText-header">
-            <h1>Work</h1>
+              <button id="toggle-btn">
+                <svg
+                  width="16"
+                  height="5"
+                  viewBox="0 0 16 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="Combined Shape"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4 2.5C4 3.88071 3.10457 5 2 5C0.895431 5 0 3.88071 0 2.5C0 1.11929 0.895431 0 2 0C3.10457 0 4 1.11929 4 2.5ZM10 2.5C10 3.88071 9.10457 5 8 5C6.89543 5 6 3.88071 6 2.5C6 1.11929 6.89543 0 8 0C9.10457 0 10 1.11929 10 2.5ZM14 5C15.1046 5 16 3.88071 16 2.5C16 1.11929 15.1046 0 14 0C12.8954 0 12 1.11929 12 2.5C12 3.88071 12.8954 5 14 5Z"
+                    fill="#BBC0FF"
+                  />
+                </svg>
+              </button>
+            </div>
 
-            <button id="toggle-btn">
-              <svg
-                class="toggleBtn-icon"
-                viewBox="0 0 16 5"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  id="Combined Shape"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M4 2.5C4 3.88071 3.10457 5 2 5C0.895431 5 0 3.88071 0 2.5C0 1.11929 0.895431 0 2 0C3.10457 0 4 1.11929 4 2.5ZM10 2.5C10 3.88071 9.10457 5 8 5C6.89543 5 6 3.88071 6 2.5C6 1.11929 6.89543 0 8 0C9.10457 0 10 1.11929 10 2.5ZM14 5C15.1046 5 16 3.88071 16 2.5C16 1.11929 15.1046 0 14 0C12.8954 0 12 1.11929 12 2.5C12 3.88071 12.8954 5 14 5Z"
-                  fill="#BBC0FF"
-                />
-              </svg>
-            </button>
-          </div>
-
-          <div class="card-time">
-            <span>96hrs</span>
-            <p>Last month - 108hrs</p>
+            <div class="card-time">
+              <span>30hrs</span>
+              <p>Last month - 24hrs</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div id="play-card" class="card">
-        <div class="card-text">
-          <div class="cardText-header">
-            <h1>Play</h1>
+        <div id="study-card" class="card">
+          <div class="card-text">
+            <div class="cardText-header">
+              <h1>Study</h1>
 
-            <button id="toggle-btn">
-              <svg
-                width="16"
-                height="5"
-                viewBox="0 0 16 5"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  id="Combined Shape"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M4 2.5C4 3.88071 3.10457 5 2 5C0.895431 5 0 3.88071 0 2.5C0 1.11929 0.895431 0 2 0C3.10457 0 4 1.11929 4 2.5ZM10 2.5C10 3.88071 9.10457 5 8 5C6.89543 5 6 3.88071 6 2.5C6 1.11929 6.89543 0 8 0C9.10457 0 10 1.11929 10 2.5ZM14 5C15.1046 5 16 3.88071 16 2.5C16 1.11929 15.1046 0 14 0C12.8954 0 12 1.11929 12 2.5C12 3.88071 12.8954 5 14 5Z"
-                  fill="#BBC0FF"
-                />
-              </svg>
-            </button>
-          </div>
+              <button id="toggle-btn">
+                <svg
+                  width="16"
+                  height="5"
+                  viewBox="0 0 16 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="Combined Shape"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4 2.5C4 3.88071 3.10457 5 2 5C0.895431 5 0 3.88071 0 2.5C0 1.11929 0.895431 0 2 0C3.10457 0 4 1.11929 4 2.5ZM10 2.5C10 3.88071 9.10457 5 8 5C6.89543 5 6 3.88071 6 2.5C6 1.11929 6.89543 0 8 0C9.10457 0 10 1.11929 10 2.5ZM14 5C15.1046 5 16 3.88071 16 2.5C16 1.11929 15.1046 0 14 0C12.8954 0 12 1.11929 12 2.5C12 3.88071 12.8954 5 14 5Z"
+                    fill="#BBC0FF"
+                  />
+                </svg>
+              </button>
+            </div>
 
-          <div class="card-time">
-            <span>30hrs</span>
-            <p>Last month - 24hrs</p>
-          </div>
-        </div>
-      </div>
-      <div id="study-card" class="card">
-        <div class="card-text">
-          <div class="cardText-header">
-            <h1>Study</h1>
-
-            <button id="toggle-btn">
-              <svg
-                width="16"
-                height="5"
-                viewBox="0 0 16 5"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  id="Combined Shape"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M4 2.5C4 3.88071 3.10457 5 2 5C0.895431 5 0 3.88071 0 2.5C0 1.11929 0.895431 0 2 0C3.10457 0 4 1.11929 4 2.5ZM10 2.5C10 3.88071 9.10457 5 8 5C6.89543 5 6 3.88071 6 2.5C6 1.11929 6.89543 0 8 0C9.10457 0 10 1.11929 10 2.5ZM14 5C15.1046 5 16 3.88071 16 2.5C16 1.11929 15.1046 0 14 0C12.8954 0 12 1.11929 12 2.5C12 3.88071 12.8954 5 14 5Z"
-                  fill="#BBC0FF"
-                />
-              </svg>
-            </button>
-          </div>
-
-          <div class="card-time">
-            <span>12hrs</span>
-            <p>Last month - 21hrs</p>
+            <div class="card-time">
+              <span>12hrs</span>
+              <p>Last month - 21hrs</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div id="exercise-card" class="card">
-        <div class="card-text">
-          <div class="cardText-header">
-            <h1>Exercise</h1>
+        <div id="exercise-card" class="card">
+          <div class="card-text">
+            <div class="cardText-header">
+              <h1>Exercise</h1>
 
-            <button id="toggle-btn">
-              <svg
-                width="16"
-                height="5"
-                viewBox="0 0 16 5"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  id="Combined Shape"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M4 2.5C4 3.88071 3.10457 5 2 5C0.895431 5 0 3.88071 0 2.5C0 1.11929 0.895431 0 2 0C3.10457 0 4 1.11929 4 2.5ZM10 2.5C10 3.88071 9.10457 5 8 5C6.89543 5 6 3.88071 6 2.5C6 1.11929 6.89543 0 8 0C9.10457 0 10 1.11929 10 2.5ZM14 5C15.1046 5 16 3.88071 16 2.5C16 1.11929 15.1046 0 14 0C12.8954 0 12 1.11929 12 2.5C12 3.88071 12.8954 5 14 5Z"
-                  fill="#BBC0FF"
-                />
-              </svg>
-            </button>
-          </div>
+              <button id="toggle-btn">
+                <svg
+                  width="16"
+                  height="5"
+                  viewBox="0 0 16 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="Combined Shape"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4 2.5C4 3.88071 3.10457 5 2 5C0.895431 5 0 3.88071 0 2.5C0 1.11929 0.895431 0 2 0C3.10457 0 4 1.11929 4 2.5ZM10 2.5C10 3.88071 9.10457 5 8 5C6.89543 5 6 3.88071 6 2.5C6 1.11929 6.89543 0 8 0C9.10457 0 10 1.11929 10 2.5ZM14 5C15.1046 5 16 3.88071 16 2.5C16 1.11929 15.1046 0 14 0C12.8954 0 12 1.11929 12 2.5C12 3.88071 12.8954 5 14 5Z"
+                    fill="#BBC0FF"
+                  />
+                </svg>
+              </button>
+            </div>
 
-          <div class="card-time">
-            <span>12hrs</span>
-            <p>Last month - 15hrs</p>
-          </div>
-        </div>
-      </div>
-      <div id="social-card" class="card">
-        <div class="card-text">
-          <div class="cardText-header">
-            <h1>Social</h1>
-
-            <button id="toggle-btn">
-              <svg
-                width="16"
-                height="5"
-                viewBox="0 0 16 5"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  id="Combined Shape"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M4 2.5C4 3.88071 3.10457 5 2 5C0.895431 5 0 3.88071 0 2.5C0 1.11929 0.895431 0 2 0C3.10457 0 4 1.11929 4 2.5ZM10 2.5C10 3.88071 9.10457 5 8 5C6.89543 5 6 3.88071 6 2.5C6 1.11929 6.89543 0 8 0C9.10457 0 10 1.11929 10 2.5ZM14 5C15.1046 5 16 3.88071 16 2.5C16 1.11929 15.1046 0 14 0C12.8954 0 12 1.11929 12 2.5C12 3.88071 12.8954 5 14 5Z"
-                  fill="#BBC0FF"
-                />
-              </svg>
-            </button>
-          </div>
-
-          <div class="card-time">
-            <span>15hrs</span>
-            <p>Last month - 30hrs</p>
+            <div class="card-time">
+              <span>12hrs</span>
+              <p>Last month - 15hrs</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div id="selfCare-card" class="card">
-        <div class="card-text">
-          <div class="cardText-header">
-            <h1>Self Care</h1>
+        <div id="social-card" class="card">
+          <div class="card-text">
+            <div class="cardText-header">
+              <h1>Social</h1>
 
-            <button id="toggle-btn">
-              <svg
-                width="16"
-                height="5"
-                viewBox="0 0 16 5"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  id="Combined Shape"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M4 2.5C4 3.88071 3.10457 5 2 5C0.895431 5 0 3.88071 0 2.5C0 1.11929 0.895431 0 2 0C3.10457 0 4 1.11929 4 2.5ZM10 2.5C10 3.88071 9.10457 5 8 5C6.89543 5 6 3.88071 6 2.5C6 1.11929 6.89543 0 8 0C9.10457 0 10 1.11929 10 2.5ZM14 5C15.1046 5 16 3.88071 16 2.5C16 1.11929 15.1046 0 14 0C12.8954 0 12 1.11929 12 2.5C12 3.88071 12.8954 5 14 5Z"
-                  fill="#BBC0FF"
-                />
-              </svg>
-            </button>
+              <button id="toggle-btn">
+                <svg
+                  width="16"
+                  height="5"
+                  viewBox="0 0 16 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="Combined Shape"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4 2.5C4 3.88071 3.10457 5 2 5C0.895431 5 0 3.88071 0 2.5C0 1.11929 0.895431 0 2 0C3.10457 0 4 1.11929 4 2.5ZM10 2.5C10 3.88071 9.10457 5 8 5C6.89543 5 6 3.88071 6 2.5C6 1.11929 6.89543 0 8 0C9.10457 0 10 1.11929 10 2.5ZM14 5C15.1046 5 16 3.88071 16 2.5C16 1.11929 15.1046 0 14 0C12.8954 0 12 1.11929 12 2.5C12 3.88071 12.8954 5 14 5Z"
+                    fill="#BBC0FF"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="card-time">
+              <span>15hrs</span>
+              <p>Last month - 30hrs</p>
+            </div>
           </div>
+        </div>
+        <div id="selfCare-card" class="card">
+          <div class="card-text">
+            <div class="cardText-header">
+              <h1>Self Care</h1>
 
-          <div class="card-time">
-            <span>6hrs</span>
-            <p>Last month - 6hrs</p>
+              <button id="toggle-btn">
+                <svg
+                  width="16"
+                  height="5"
+                  viewBox="0 0 16 5"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    id="Combined Shape"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4 2.5C4 3.88071 3.10457 5 2 5C0.895431 5 0 3.88071 0 2.5C0 1.11929 0.895431 0 2 0C3.10457 0 4 1.11929 4 2.5ZM10 2.5C10 3.88071 9.10457 5 8 5C6.89543 5 6 3.88071 6 2.5C6 1.11929 6.89543 0 8 0C9.10457 0 10 1.11929 10 2.5ZM14 5C15.1046 5 16 3.88071 16 2.5C16 1.11929 15.1046 0 14 0C12.8954 0 12 1.11929 12 2.5C12 3.88071 12.8954 5 14 5Z"
+                    fill="#BBC0FF"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="card-time">
+              <span>6hrs</span>
+              <p>Last month - 6hrs</p>
+            </div>
           </div>
         </div>
       </div>
